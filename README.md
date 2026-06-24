@@ -48,8 +48,3 @@ Você pode rodar este projeto de duas formas: localmente (via Jupyter Notebook) 
 4. Execute as células subsequentes. 
 5. Na **Célula 3**, o código solicitará o arquivo de dados. Clique no botão de upload que aparecerá na tela e selecione o arquivo `evasao_300_alunos.csv`.
 
-### Opção 2: Executando Localmente (PC)
-1. Certifique-se de ter o Python instalado. Clone este repositório ou baixe os arquivos em uma pasta.
-2. Abra o terminal na pasta do projeto e instale as dependências executando:
-   ```bash
-   pip install numpy pandas matplotlib scikit-learn scikit-fuzzy jupyter
