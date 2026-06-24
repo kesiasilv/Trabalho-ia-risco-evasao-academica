@@ -41,26 +41,10 @@ Para executar o notebook, você precisará do Python 3 instalado e das seguintes
 
 Você pode rodar este projeto de duas formas: localmente (via Jupyter Notebook) ou de forma totalmente online no Google Colab.
 
-### Opção 1: Executando no Google Colab (Recomendado)
+### Opção Recomendada: Executando no Google Colab (Recomendado)
 1. Acesse o [Google Colab](https://colab.research.google.com/).
 2. Faça o upload do arquivo `Lógica_Fuzzy_e_Machine_Learning_.ipynb`.
 3. Execute a **Célula 1** para instalar automaticamente a biblioteca `scikit-fuzzy`.
 4. Execute as células subsequentes. 
 5. Na **Célula 3**, o código solicitará o arquivo de dados. Clique no botão de upload que aparecerá na tela e selecione o arquivo `evasao_300_alunos.csv`.
 
-### Opção 2: Executando Localmente (PC)
-1. Certifique-se de ter o Python instalado. Clone este repositório ou baixe os arquivos em uma pasta.
-2. Abra o terminal na pasta do projeto e instale as dependências executando:
-   ```bash
-   pip install numpy pandas matplotlib scikit-learn scikit-fuzzy jupyter
-3. Inicie o Jupyter Notebook com o comando:
-      ```bash
-      jupyter notebook
-4. Abra o arquivo Lógica_Fuzzy_e_Machine_Learning_.ipynb
-5. Como a célula de carregamento de dados (Célula 3) foi desenhada para a interface do Google Colab (from google.colab import files), se você estiver rodando localmente, altere a Célula 3 para ler o arquivo diretamente:
-   # Substitua a Célula 3 por isso se rodar localmente:
-import pandas as pd
-df = pd.read_csv("evasao_300_alunos.csv")
-df.columns = df.columns.str.strip()
-
-6. Execute todas as células do menu Cell > Run All.
