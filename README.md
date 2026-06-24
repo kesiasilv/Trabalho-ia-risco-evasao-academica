@@ -53,3 +53,14 @@ Você pode rodar este projeto de duas formas: localmente (via Jupyter Notebook) 
 2. Abra o terminal na pasta do projeto e instale as dependências executando:
    ```bash
    pip install numpy pandas matplotlib scikit-learn scikit-fuzzy jupyter
+3. Inicie o Jupyter Notebook com o comando:
+      ```bash
+      jupyter notebook
+4. Abra o arquivo Lógica_Fuzzy_e_Machine_Learning_.ipynb
+5. Como a célula de carregamento de dados (Célula 3) foi desenhada para a interface do Google Colab (from google.colab import files), se você estiver rodando localmente, altere a Célula 3 para ler o arquivo diretamente:
+   # Substitua a Célula 3 por isso se rodar localmente:
+import pandas as pd
+df = pd.read_csv("evasao_300_alunos.csv")
+df.columns = df.columns.str.strip()
+
+6. Execute todas as células do menu Cell > Run All.
